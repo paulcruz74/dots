@@ -11,3 +11,6 @@ ln -sf $path/.p10k.zsh $HOME/.p10k.zsh
 [ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
 ln -sf $path/config/alacritty $HOME/.config/alacritty
 
+# ZSH
+[ ! -d $HOME/.oh-my-zsh ] && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
