@@ -17,9 +17,18 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Plugins loaded via lazy.nvim
 require("lazy").setup({
   -- Catppuccin theme: https://github.com/catppuccin/nvim
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    -- Highlight, edit, and navigate code
+    'nvim-treesitter/nvim-treesitter',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    },
+    build = ':TSUpdate',
+  }
 })
 
 vim.cmd.colorscheme "catppuccin-mocha"
@@ -38,3 +47,15 @@ vim.o.smartcase = true
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- [[ Configure Treesitter ]] 
+require('nvim-treesitter.configs').setup {
+  -- Add languages to be installed here that you want installed for treesitter
+  ensure_installed = { 'c', 'cpp', 'lua' },
+
+  -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
+  auto_install = false,
+
+  highlight = { enable = true },
+  indent = { enable = true },
+}
