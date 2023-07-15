@@ -45,6 +45,12 @@ vim.o.mouse = 'a'
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
+-- Indentation related settings
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
