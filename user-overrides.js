@@ -10,3 +10,7 @@ user_pref("signon.rememberSignons", false);
 
 // Re-enable safebrowsing
 user_pref("browser.safebrowsing.downloads.remote.enabled", true);
+
+//Disable Pocket
+user_pref("extensions.pocket.enabled", false);
+
