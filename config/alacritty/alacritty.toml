@@ -1,0 +1,40 @@
+import = ["/Users/paulcruz/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+working_directory = "src"
+
+[env]
+TERM = "alacritty"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "full"
+decorations_theme_variant = "None"
+dynamic_padding = false
+dynamic_title = true
+opacity = 1.0
+option_as_alt = "None"
+resize_increments = false
+startup_mode = "Maximized"
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 0
+y = 0
+
+[window.position]
+x = 0
+y = 0
