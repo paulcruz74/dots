@@ -5,7 +5,7 @@ working_directory = "src"
 TERM = "alacritty"
 
 [font.normal]
-family = "MesloLGS NF"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [scrolling]
