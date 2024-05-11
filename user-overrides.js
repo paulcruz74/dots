@@ -14,3 +14,5 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", true);
 //Disable Pocket
 user_pref("extensions.pocket.enabled", false);
 
+// Disable letterboxing
+//user_pref("privacy.resistFingerprinting.letterboxing", false);
