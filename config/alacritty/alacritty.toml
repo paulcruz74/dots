@@ -1,5 +1,3 @@
-import = ["/Users/paulcruz/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
-working_directory = "src"
 
 [env]
 TERM = "alacritty"
@@ -38,3 +36,7 @@ y = 0
 [window.position]
 x = 0
 y = 0
+
+[general]
+working_directory = "src"
+import = ["/Users/paulcruz/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
