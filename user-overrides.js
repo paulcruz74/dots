@@ -16,3 +16,7 @@ user_pref("extensions.pocket.enabled", false);
 
 // Disable letterboxing
 //user_pref("privacy.resistFingerprinting.letterboxing", false);
+
+// Veritcal tabs
+user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.revamp", true);
