@@ -20,3 +20,6 @@ user_pref("extensions.pocket.enabled", false);
 // Veritcal tabs
 user_pref("sidebar.verticalTabs", true);
 user_pref("sidebar.revamp", true);
+
+// Disable sanitize cookies on exit https://bugzilla.mozilla.org/show_bug.cgi?id=1767271
+// user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false);
