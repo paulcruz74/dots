@@ -5,3 +5,4 @@ defaults write com.apple.dock autohide-delay -float 0
 # Increase keyboard repeat rate
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
