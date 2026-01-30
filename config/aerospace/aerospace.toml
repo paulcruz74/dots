@@ -66,6 +66,7 @@ on-mode-changed = []
 3 = '^DELL S3422DWG$'
 
 # app-based workspaces
+A = '^DELL S3422DWG$'  # Atlas
 C = '^DELL S3422DWG$'  # Chrome
 S = '^DELL S3422DWG$'  # Slack
 N = '^DELL S3422DWG$'  # Notion
@@ -237,6 +238,10 @@ M = '^DELL S3422DWG$'  # Spotify
 [[on-window-detected]]
 if.app-id = "com.google.Chrome"
 run = "move-node-to-workspace C"
+
+[[on-window-detected]]
+if.app-id = "com.openai.atlas"
+run = "move-node-to-workspace A"
 
 [[on-window-detected]]
 if.app-id = "com.spotify.client"
