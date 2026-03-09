@@ -61,17 +61,28 @@ on-mode-changed = []
 
 [workspace-to-monitor-force-assignment]
 # existing numeric workspaces
-1 = '^DELL S3422DWG$'
-2 = '^DELL S3422DWG$'
-3 = '^DELL S3422DWG$'
+#1 = '^DELL S3422DWG$'
+#2 = '^DELL S3422DWG$'
+#3 = '^DELL S3422DWG$'
+1 = '^DELL S2722DC$'
+2 = '^DELL S2722DC$'
+3 = '^DELL S2722DC$'
+4 = '^DELL S2722DC$'
+5 = '^DELL S2722DC$'
 
 # app-based workspaces
-A = '^DELL S3422DWG$'  # Atlas
-C = '^DELL S3422DWG$'  # Chrome
-S = '^DELL S3422DWG$'  # Slack
-N = '^DELL S3422DWG$'  # Notion
-R = '^DELL S3422DWG$'  # Linear
-M = '^DELL S3422DWG$'  # Spotify
+#A = '^DELL S3422DWG$'  # Atlas
+#C = '^DELL S3422DWG$'  # Chrome
+#S = '^DELL S3422DWG$'  # Slack
+#N = '^DELL S3422DWG$'  # Notion
+#R = '^DELL S3422DWG$'  # Linear
+#M = '^DELL S3422DWG$'  # Spotify
+A = '^DELL S2722DC$'  # Atlas
+C = '^DELL S2722DC$'  # Chrome
+S = '^DELL S2722DC$'  # Slack
+N = '^DELL S2722DC$'  # Notion
+R = '^DELL S2722DC$'  # Linear
+M = '^DELL S2722DC$'  # Spotify
 
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
@@ -258,3 +269,9 @@ run = "move-node-to-workspace N"
 [[on-window-detected]]
 if.app-id = "com.linear"
 run = "move-node-to-workspace R"
+
+# --- Workaround for Ghostty native tabs ---
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run = [ "layout floating" ]
+
