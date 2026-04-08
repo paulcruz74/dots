@@ -69,6 +69,9 @@ on-mode-changed = []
 3 = '^DELL S2722DC$'
 4 = '^DELL S2722DC$'
 5 = '^DELL S2722DC$'
+6 = '^DELL S2722DC$'
+7 = '^DELL S2722DC$'
+8 = '^DELL S2722DC$'
 
 # app-based workspaces
 #A = '^DELL S3422DWG$'  # Atlas
